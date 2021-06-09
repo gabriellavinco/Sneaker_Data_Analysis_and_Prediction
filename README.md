@@ -2,6 +2,20 @@
 
 ![picture](SneakerPhotos/boxes.jpeg)
 
+# Introduction
+
+This project was created for the Collecting and Analyzing Big Data course at KU Leuven. There are 4 main parts to this project, the table of contents below shows the correct order in which to view the notebooks:
+
+1. Stock X Scraping
+    - query_key_generator.ipynb
+    - sneaker_scraping.ipynb
+2. Reddit Scraping
+    - reddit_scraper.ipynb
+3. Price Prediction Analysis
+    - Price Prediction.ipynb
+4. Text Analysis
+    - Text Analysis Comments Sneakers.ipynb
+
 # StockX Scraping:
 
 The first part of this project is focused on scraping data from StockX. We focused on the 5 sections that were accessible from the navigation bar (Adidas, Air Jordan, Nike, Other Brands, and Luxury Brands). We collected the url keys for all the shoes available in each category, which we were then able to search based on the keys to gather more information about the individual shoes. We then were able to find the sku for each shoe which is essentially an ID number to identify the shoe. This sku ID would then allow us to scrape the interactive plot at the bottom of the shoe's page that would give us information on the past resale prices of that specific shoe.
