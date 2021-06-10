@@ -27,7 +27,6 @@ The first part of this project is focused on scraping data from StockX. We focus
 The second part of this project is focused on using PRAM to scrape Reddit. With the information we collected from the StockX portion we were able to create a list of all of the names of the sneakers. The issue was that for certain shoes there were many colorways for the same model name, so we reduced the list to only include unique shoe model names. After that we had 630 unique model names to work with which is when we decided to reduce it even more to a random sample of 30 shoes to focus on. We specified in our query that we wanted to search only on the subreddit r/Sneakers and then used the list of 30 shoe model names as keywords for grabbing posts. With that we extracted the texts, id number, and date/time of each post. Using the post id numbers we were then able to go one step further and grab the texts from the comments section, which is the data that we actually wanted to get.
 
 # Correspondance Analysis of Sneaker Attributes
-by Diego Fernández Zapico
 
 From the previous notebook we gathered from scraping Stock X, 'sneaker_scraping', we have a data set 'Sneaker_Info_data' with all the sneakers available. In this notebook we aim to analyze its main features using correspondance analysis (CA). This technique is commonly known as the Principal Component Analysis (PCA) for categorical data.
 
@@ -36,7 +35,6 @@ It will help us to determine which features or attributes of the data are most r
 Before applying it, we look into each of these attributes in detail and make the necessary transformations. Continuous attributes need to be discretized to be used in CA. Categorical attributes sometimes need simplification and new groupings.
 
 # Price Prediction Using Stock X Historical Prices and Google Trends:
-by Diego Fernández Zapico
 
 To help make purchasing or selling decisions on a certain sneaker it might be usefull to consider how the price will change. This notebook aims to achieve just that.
 
@@ -49,7 +47,6 @@ The predictions are made 3 days ahead. So for any given day  𝑡 , we can get a
 
 
 # Text Analysis on Reddit Comments:
-by Carlos Ivan Madrigal Navarro
 
 This section has the purpose of extracting qualitative information about the sneakers comments we scrapped from reddit, to have a better insight of which sneakers are worth spending on, and which ones are not (shoes are not cheap!).
 
